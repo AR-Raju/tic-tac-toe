@@ -97,7 +97,7 @@ export default function Game() {
   const [xIsNext, setXIsNext] = useState(true);
   const [currentMove, setCurrentMove] = useState(0);
   const currentSquares = history[currentMove];
-
+  console.log(xIsNext);
   const handlePlay = (newSquares) => {
     setXIsNext(!xIsNext);
     const nextHistory = [...history.slice(0, currentMove + 1), newSquares];
